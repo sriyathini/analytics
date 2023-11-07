@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useNavigate } from 'react-router-dom';
 const Web = () => {
   const [navbarBackground, setNavbarBackground] = useState('transparent');
   const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
@@ -20,6 +21,13 @@ const Web = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const navigate = useNavigate();
+
+  const handleAboutClick = () => {
+    navigate('/Login');
+  };
+
   return (
     <div>
       <Navbar expand="lg" className="navbar fixed-top container-fluid" style={{ backgroundColor: navbarBackground }}>
@@ -48,7 +56,7 @@ const Web = () => {
           </Nav>
         </Navbar.Collapse>
         <Nav.Link className='cart' href="/cart"><FiShoppingCart /></Nav.Link>
-        <Button className='button' variant="secondary">SUPPORT</Button>
+        <Button className='button' variant="secondary" onClick={handleAboutClick}>SUPPORT</Button>
       </Navbar> 
     </div>
   );
