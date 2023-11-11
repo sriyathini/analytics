@@ -8,7 +8,9 @@ import About from './components/About';
 import Pages from './components/Pages';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
-import Login from "./pages/Login";
+ import Login from "./pages/Login";
+import Cart from './pages/Cart';
+import Products from './pages/Products';
 
 function App(){
   return(
@@ -21,6 +23,8 @@ function App(){
          <Route path='blog' element={<Blog/>}/>
          <Route path='contact' element={<Contact/>}/>
          <Route path='login' element={<Login/>}/>
+         <Route path='cart' element={<Cart />}/>
+         <Route path="Products" element={<Products />}/>
 
        </Route>
      </Routes>

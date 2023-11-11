@@ -23,6 +23,7 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
  similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</h3>
                     <button className="button mt-5 pt-2 pb-2" style={{width:"30%"}}>Discover More</button>
+                    {/* <MyComponent style={{ marginRight: '10px' }}></MyComponent> */}
                     </div>
                  </div>
              </div>
