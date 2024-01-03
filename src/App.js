@@ -6,29 +6,44 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Rootlayout from './layout/Rootlayout';
 import About from './components/About';
 import Pages from './components/Pages';
-import Blog from './components/Blog';
-import Contact from './components/Contact';
+// import Blog from './components/Blog';
+// import Contact from './components/Contact';
  import Login from "./pages/Login";
 import Cart from './pages/Cart';
 import Products from './pages/Products';
 
 function App(){
   return(
-    <BrowserRouter>
-     <Routes>
-       <Route path='/' element={<Rootlayout/>}>
-         <Route index element={<Home/>}/> 
-         <Route path='about' element={<About/>}/>
-         <Route path='pages' element={<Pages/>}/>
-         <Route path='blog' element={<Blog/>}/>
-         <Route path='contact' element={<Contact/>}/>
-         <Route path='login' element={<Login/>}/>
-         <Route path='cart' element={<Cart />}/>
-         <Route path="Products" element={<Products />}/>
+    // <BrowserRouter>
+    //  <Routes>
+    //    <Route path='/' element={<Rootlayout/>}>
+    //      <Route index element={<Home/>}/> 
+    //      <Route path='about' element={<About/>}/>
+    //      <Route path='pages' element={<Pages/>}/>
+    //      {/* <Route path='blog' element={<Blog/>}/>
+    //      <Route path='contact' element={<Contact/>}/> */}
+    //      <Route path='login' element={<Login/>}/>
+    //      <Route path='cart' element={<Cart />}/>
+    //      <Route path="Products" element={<Products />}/>
 
-       </Route>
-     </Routes>
+    //    </Route>
+    //  </Routes>
     
+    // </BrowserRouter>
+
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Rootlayout/>}>
+          <Route index element={<Home/>}/> 
+          <Route path='about' element={<About/>}/>
+          <Route path='pages' element={<Pages/>}/>
+          {/* <Route path='blog' element={<Blog/>}/>
+          <Route path='contact' element={<Contact/>}/> */}
+          <Route path='login' element={<Login/>}/>
+          <Route path='cart' element={<Cart />}/>
+          <Route path="Products" element={<Products />}/>
+        </Route>
+      </Routes>
     </BrowserRouter>
     
   );
